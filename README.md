@@ -13,6 +13,8 @@ Our Value Section featuring an FAQ accordion.
 
 Contact Section with interactive call-to-action cards.
 
+<img width="1574" height="758" alt="image" src="https://github.com/user-attachments/assets/676d0a7f-de67-4881-baa5-ff37fe442876" />
+
 2. Technologies Used
 
 Next.js – For server-side rendering and React components.
@@ -73,7 +75,7 @@ Horizontal scroll using Tailwind’s overflow-x-scroll.
 
 Cards rendered dynamically from the residencies array.
 
-![Uploading image.png…]()
+<img width="1581" height="772" alt="image" src="https://github.com/user-attachments/assets/229fa651-982e-4674-b282-6ad21a1eca1b" />
 
 5.3 Our Value Section
 
