@@ -2,19 +2,21 @@
 1. Overview:
    
 This project is a real estate web application built using Next.js and Tailwind CSS.
-           Key Features:
-                   Responsive Navbar with mobile menu.
-                   
-                   Residencies Section with a horizontal slider.
-                   
-                   Our Value Section featuring an FAQ accordion.
 
-                   Contact Section with interactive call-to-action cards.
+Key Features:
+
+Responsive Navbar with mobile menu.
+                   
+Residencies Section with a horizontal slider.
+                   
+Our Value Section featuring an FAQ accordion.
+
+Contact Section with interactive call-to-action cards.
 
 2. Technologies Used
 
 Next.js – For server-side rendering and React components.
-
+ 
 Tailwind CSS – Utility-first styling framework.
 
 Lucide-react icons – Modern icons such as Menu, X, Phone, etc.
@@ -23,13 +25,12 @@ Lucide-react icons – Modern icons such as Menu, X, Phone, etc.
 
 Tailwind is used to style components directly in HTML:
 
-<nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+                   <nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
 
 
 Responsive behavior is achieved using breakpoints:
 
-<ul className="hidden md:flex items-center gap-8 font-medium">
-
+                   <ul className="hidden md:flex items-center gap-8 font-medium">
 
 Utility classes like rounded-lg, shadow-lg, overflow-x-scroll make styling easier and more consistent.
 
@@ -50,10 +51,12 @@ onClick={() => toggleAccordion(index)}
 
 Dynamically renders property cards:
 
-const residencies = [
-  { id: 1, price: "$47,043", title: "Aliva Priva Jardin", img: "/images/Modern-Appartment.jpg" },
-  ...
-];
+const residencies = 
+
+             [
+                      { id: 1, price: "$47,043", title: "Aliva Priva Jardin", img: "/images/Modern-Appartment.jpg" },
+
+             ];
 
 5. Key Sections
 5.1 Navbar
@@ -62,17 +65,23 @@ Desktop links with hover effects.
 
 Mobile menu controlled by a hamburger button.
 
+<img width="1582" height="66" alt="image" src="https://github.com/user-attachments/assets/8bd434a7-e382-47bd-9483-92f033b84fa7" />
+
 5.2 Residencies Slider
 
 Horizontal scroll using Tailwind’s overflow-x-scroll.
 
 Cards rendered dynamically from the residencies array.
 
+![Uploading image.png…]()
+
 5.3 Our Value Section
 
 Left: Feature image.
 
 Right: FAQ accordion with toggle functionality.
+
+<img width="1582" height="773" alt="image" src="https://github.com/user-attachments/assets/d39913dc-a702-4769-9c25-a4eb36810ec5" />
 
 5.4 Contact Section
 
@@ -86,6 +95,8 @@ Description
 
 Action button
 
+<img width="1576" height="716" alt="image" src="https://github.com/user-attachments/assets/eb214826-aabb-4f35-b797-287cc1293b46" />
+
 6. How to Upload and Host
 6.1 Push the Project to GitHub
 
@@ -93,7 +104,6 @@ Create a new repository.
 
 Commit and push all files.
 
-6.2 Deploy on Vercel or Netlify
 
 Ensure images are placed inside /public/images/.
 
