@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Homyz Property Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <style>
+    /* Optional slow spin animation for decorative circle */
+    .animate-spin-slow {
+      animation: spin 8s linear infinite;
+    }
+  </style>
+</head>
+<body class="scroll-smooth">
+
+    <!-- ===== Navbar ===== -->
+<nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <!-- Logo -->
+    <div class="relative inline-block font-bold text-3xl">
+      Homyz
+      <span class="absolute top-0 right-[-10px] w-3 h-3 bg-blue-500 rounded-full"></span>
+    </div>
+
+    <!-- Desktop Links -->
+    <ul class="hidden md:flex items-center gap-8 font-medium">
+      <li class="hover:text-blue-400 transition"><a href="#residencies">Residencies</a></li>
+      <li class="hover:text-blue-400 transition"><a href="#our-value">Our Value</a></li>
+      <li class="hover:text-blue-400 transition"><a href="#contact">Contact Us</a></li>
+      <li class="hover:text-blue-400 transition"><a href="#get-started">Get Started</a></li>
+      <li>
+        <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg transition">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 py-6 flex-col gap-4">
+    <li class="hover:text-blue-400 transition"><a href="#residencies">Residencies</a></li>
+    <li class="hover:text-blue-400 transition"><a href="#our-value">Our Value</a></li>
+    <li class="hover:text-blue-400 transition"><a href="#contact">Contact Us</a></li>
+    <li class="hover:text-blue-400 transition"><a href="#get-started">Get Started</a></li>
+    <li>
+      <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg transition">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- ===== Hero Section ===== -->
+<section
+  id="get-started"
+  class="relative bg-gradient-to-br from-black via-gray-900 to-gray-800 min-h-screen text-white px-6 py-16 flex flex-col md:flex-row items-center justify-between overflow-hidden"
+>
+  <!-- Decorative Circles -->
+  <div class="absolute top-32 left-[-100px] w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute bottom-20 right-20 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl animate-bounce"></div>
+  <div class="absolute top-40 right-40 w-20 h-20 bg-pink-500/20 rounded-full blur-2xl animate-spin-slow"></div>
+
+  <!-- Left Content -->
+  <div class="max-w-lg md:ml-[3cm] z-10 text-center md:text-left">
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
+      <div class="relative inline-block">
+        Discover
+        <span class="absolute top-0 right-[-14px] w-4 h-4 bg-blue-500 rounded-full animate-ping"></span>
+      </div>
+      <br />
+      Most Suitable <br />
+      <span class="text-blue-400">Property</span>
+    </h1>
+    <p class="text-gray-300 mt-4 text-lg leading-relaxed">
+      Find a variety of properties that suit you very easily. Forget all
+      difficulties in finding a residence for you.
+    </p>
+
+    <!-- Search Bar -->
+    <div class="mt-6 flex bg-white rounded-xl shadow-2xl overflow-hidden max-w-md border border-gray-300">
+      <div class="flex items-center justify-center px-3 text-blue-500">
+        <!-- Search Icon -->
+        🔍
+      </div>
+      <input
+        type="text"
+        placeholder="Search location..."
+        class="flex-1 px-4 py-3 text-black outline-none text-sm"
+      />
+      <button class="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 text-white text-sm font-semibold">
+        Search
+      </button>
+    </div>
+
+    <!-- Stats -->
+    <div class="flex gap-12 mt-10 justify-center md:justify-start">
+      <div class="text-center">
+        <p class="text-3xl font-extrabold text-blue-400">9,000+</p>
+        <p class="text-gray-400 text-sm">Premium Products</p>
+      </div>
+      <div class="text-center">
+        <p class="text-3xl font-extrabold text-purple-400">2,000+</p>
+        <p class="text-gray-400 text-sm">Happy Customers</p>
+      </div>
+      <div class="text-center">
+        <p class="text-3xl font-extrabold text-pink-400">28+</p>
+        <p class="text-gray-400 text-sm">Awards Winning</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Image -->
+  <div
+    class="mt-12 md:mt-0 md:w-1/2 flex justify-center z-10"
+  >
+    <div
+      class="rounded-t-full overflow-hidden border-4 border-blue-500/40 shadow-2xl w-96 h-[500px] hover:scale-105 transition-transform duration-500"
+    >
+      <img
+        src="/images/hero-property.png"
+        alt="Property"
+        class="object-cover w-full h-full"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- ===== Banner ===== -->
+<section class="w-full bg-white py-8 px-[2cm]">
+  <img
+    src="/images/banner-wide.png"
+    alt="Luxury Banner"
+    class="w-full h-[180px] md:h-[220px] lg:h-[260px] object-contain"
+  />
+</section>
+
+<!-- ===== Residencies Section ===== -->
+<section id="residencies" class="bg-white py-20 px-6 md:px-20">
+  <div class="mb-12 flex justify-between items-center">
+    <div>
+      <h3 class="text-xl font-semibold text-orange-500">Best Choices</h3>
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900">
+        Popular Residencies
+      </h2>
+    </div>
+  </div>
+
+  <!-- Swiper Slider -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+        <img
+          src="images/Modern-Appartment.jpg"
+          alt="Aliva Priva Jardin"
+          class="object-cover w-full h-56"
+        />
+        <div class="p-4">
+          <p class="text-orange-500 font-bold text-lg">$47,043</p>
+          <h3 class="font-bold text-xl text-blue-900">Aliva Priva Jardin</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+        <img
+          src="images/Family-Appartment.webp"
+          alt="Asatti Garden City"
+          class="object-cover w-full h-56"
+        />
+        <div class="p-4">
+          <p class="text-orange-500 font-bold text-lg">$66,353</p>
+          <h3 class="font-bold text-xl text-blue-900">Asatti Garden City</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+        <img
+          src="images/miami.png"
+          alt="Citralan Puri Serang"
+          class="object-cover w-full h-56"
+        />
+        <div class="p-4">
+          <p class="text-orange-500 font-bold text-lg">$35,853</p>
+          <h3 class="font-bold text-xl text-blue-900">Citralan Puri Serang</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+        <img
+          src="images/Subarban-Neighbouhood.webp"
+          alt="Grand Wisata Bekasi"
+          class="object-cover w-full h-56"
+        />
+        <div class="p-4">
+          <p class="text-orange-500 font-bold text-lg">$52,000</p>
+          <h3 class="font-bold text-xl text-blue-900">Grand Wisata Bekasi</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Jl. Boulevard Grand Wisata, Tambun Selatan, Bekasi, Jawa Barat
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+        <img
+          src="images/Luxury-Villa.jpg"
+          alt="Palm Hills Estate"
+          class="object-cover w-full h-56"
+        />
+        <div class="p-4">
+          <p class="text-orange-500 font-bold text-lg">$72,500</p>
+          <h3 class="font-bold text-xl text-blue-900">Palm Hills Estate</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Jl. Palm Raya No.45, Pondok Indah, South Jakarta
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="swiper-slide bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+        <img
+          src="images/Beach-site.jpg"
+          alt="Oceanview Apartments"
+          class="object-cover w-full h-56"
+        />
+        <div class="p-4">
+          <p class="text-orange-500 font-bold text-lg">$41,200</p>
+          <h3 class="font-bold text-xl text-blue-900">Oceanview Apartments</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Jl. Pantai Indah Kapuk, North Jakarta
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="swiper-slide bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+        <img
+          src="images/City-Centre.webp"
+          alt="Sunrise Villas"
+          class="object-cover w-full h-56"
+        />
+        <div class="p-4">
+          <p class="text-orange-500 font-bold text-lg">$88,900</p>
+          <h3 class="font-bold text-xl text-blue-900">Sunrise Villas</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Jl. Raya Uluwatu No.10, Bali
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+
+<!-- ========== Our Value Section ========== -->
+<section id="our-value" class="w-full bg-white py-16 px-[5cm]">
+  <div class="flex flex-col md:flex-row items-center gap-12">
+    <!-- Left Side - Image -->
+    <div class="flex-1 flex justify-center">
+      <div class="rounded-t-full overflow-hidden border shadow-lg">
+        <img
+          src="images/modern-home.png"
+          alt="Our Value"
+          width="500"
+          height="500"
+          class="object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Right Side - FAQ Accordion -->
+    <div class="flex-1">
+      <h3 class="text-orange-500 font-semibold text-lg">Our Value</h3>
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-2">
+        Value We Give to You
+      </h2>
+      <p class="text-gray-600 mt-4">
+        We are always ready to help by providing the best services for you. We
+        believe a good place to live can make your life better.
+      </p>
+
+      <!-- Accordion -->
+      <div class="mt-8 space-y-4" id="faq-accordion">
+        <div class="faq-item p-4 rounded-lg shadow-md bg-white border cursor-pointer">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-blue-500 text-sm">🏠</span>
+              <h4 class="font-bold text-lg text-gray-900">
+                Best price on the market
+              </h4>
+            </div>
+            <span class="chevron">▼</span>
+          </div>
+          <p class="faq-answer text-gray-600 text-sm mt-3 hidden">
+            We guarantee the best pricing with unmatched value for your
+            investment.
+          </p>
+        </div>
+
+        <div class="faq-item p-4 rounded-lg shadow-md bg-white border cursor-pointer">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-blue-500 text-sm">🔑</span>
+              <h4 class="font-bold text-lg text-gray-900">
+                Trusted by thousands
+              </h4>
+            </div>
+            <span class="chevron">▼</span>
+          </div>
+          <p class="faq-answer text-gray-600 text-sm mt-3 hidden">
+            We have helped thousands of families find their dream homes across
+            the country.
+          </p>
+        </div>
+
+        <div class="faq-item p-4 rounded-lg shadow-md bg-white border cursor-pointer">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-blue-500 text-sm">💡</span>
+              <h4 class="font-bold text-lg text-gray-900">
+                Expert guidance
+              </h4>
+            </div>
+            <span class="chevron">▼</span>
+          </div>
+          <p class="faq-answer text-gray-600 text-sm mt-3 hidden">
+            Our experienced agents will guide you through the entire buying
+            process with ease.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== Contact Section ========== -->
+<section id="contact" class="bg-white py-20">
+  <div class="flex flex-col md:flex-row items-center gap-12">
+    <!-- Left Side -->
+    <div class="flex-1 ml-[5cm]">
+      <h3 class="text-orange-500 font-semibold text-lg">Our Contact Us</h3>
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-2">
+        Easy to contact us
+      </h2>
+      <p class="text-gray-600 mt-4">
+        We are always ready to help by providing the best services for you. We
+        believe a good place to live can make your life better.
+      </p>
+
+      <!-- Contact Options -->
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <!-- Call -->
+        <div class="border p-4 rounded-lg shadow hover:shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               fill="none" viewBox="0 0 24 24" 
+               stroke="currentColor" 
+               class="w-5 h-5 text-blue-500">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" 
+                  d="M3 5a2 2 0 012-2h2.28a2 2 0 011.96 1.57l.5 2A2 2 0 019 8.03L7.12 9.9a11.05 11.05 0 005.17 5.17L13.97 13a2 2 0 012.46-.18l2 1.13a2 2 0 011.57 1.96V19a2 2 0 01-2 2H17C9.82 21 3 14.18 3 7V5z" />
+          </svg>
+          <h4 class="font-bold text-md mt-2">Call</h4>
+          <p class="text-gray-500 text-xs">021 123 145 14</p>
+          <button class="mt-3 w-full py-1.5 rounded-md bg-blue-100 text-blue-600 text-sm font-medium">
+            Call now
+          </button>
+        </div>
+
+        <!-- Chat -->
+        <div class="border p-4 rounded-lg shadow hover:shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               fill="none" viewBox="0 0 24 24" 
+               stroke="currentColor" 
+               class="w-5 h-5 text-blue-500">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" 
+                  d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0zM8 16v2a2 2 0 002 2h4a2 2 0 002-2v-2" />
+          </svg>
+          <h4 class="font-bold text-md mt-2">Chat</h4>
+          <p class="text-gray-500 text-xs">021 123 145 14</p>
+          <button class="mt-3 w-full py-1.5 rounded-md bg-blue-100 text-blue-600 text-sm font-medium">
+            Chat now
+          </button>
+        </div>
+
+        <!-- Video Call -->
+        <div class="border p-4 rounded-lg shadow hover:shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               fill="none" viewBox="0 0 24 24" 
+               stroke="currentColor" 
+               class="w-5 h-5 text-blue-500">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" 
+                  d="M15 10l4.55-2.27A1 1 0 0121 8.64v6.72a1 1 0 01-1.45.91L15 14m-6 2h5a2 2 0 002-2V8a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2z" />
+          </svg>
+          <h4 class="font-bold text-md mt-2">Video Call</h4>
+          <p class="text-gray-500 text-xs">021 123 145 14</p>
+          <button class="mt-3 w-full py-1.5 rounded-md bg-blue-100 text-blue-600 text-sm font-medium">
+            Video Call now
+          </button>
+        </div>
+
+        <!-- Message -->
+        <div class="border p-4 rounded-lg shadow hover:shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               fill="none" viewBox="0 0 24 24" 
+               stroke="currentColor" 
+               class="w-5 h-5 text-blue-500">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" 
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 5v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5" />
+          </svg>
+          <h4 class="font-bold text-md mt-2">Message</h4>
+          <p class="text-gray-500 text-xs">021 123 145 14</p>
+          <button class="mt-3 w-full py-1.5 rounded-md bg-blue-100 text-blue-600 text-sm font-medium">
+            Message now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side Image -->
+    <div class="flex-1 flex justify-center">
+      <div class="rounded-t-full overflow-hidden border shadow-lg w-[350px] h-[400px]">
+        <img
+          src="images/contact-house.png"
+          alt="Contact House"
+          width="350"
+          height="400"
+          class="object-cover w-full h-full"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Get Started ===== -->
+<section class="w-full bg-white py-10">
+  <div class="mx-[5cm] bg-blue-600 text-white rounded-lg shadow-lg p-10 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">Get started with Homyz</h2>
+    <p class="mb-6">
+      Subscribe and find super attractive price quotes from us. <br />
+      Find your residence soon
+    </p>
+    <button class="px-6 py-2 border-2 border-white rounded-lg hover:bg-white hover:text-blue-600 transition">
+      Get Started
+    </button>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="bg-white border-t py-10 px-6 md:px-20">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+    <div>
+      <h3 class="text-2xl font-bold text-blue-900">Homyz</h3>
+      <p class="text-gray-600 mt-2 max-w-sm">
+        Our vision is to make all people the best place to live for them.
+      </p>
+    </div>
+    <div class="flex gap-10">
+      <div>
+        <h4 class="font-semibold text-blue-900">Information</h4>
+        <p class="text-gray-600 text-sm">145 New York, FL 5467, USA</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-blue-900">Links</h4>
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li>Property</li>
+          <li>Services</li>
+          <li>Product</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 30,
+    slidesPerView: 1,
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
+
+<!-- Add this script at the bottom of the page -->
+<script>
+  document.querySelectorAll(".faq-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      const answer = item.querySelector(".faq-answer");
+      const chevron = item.querySelector(".chevron");
+      const isOpen = !answer.classList.contains("hidden");
+
+      // Close all answers
+      document.querySelectorAll(".faq-answer").forEach((p) => {
+        p.classList.add("hidden");
+      });
+      document.querySelectorAll(".chevron").forEach((icon) => {
+        icon.textContent = "▼";
+      });
+
+      // Open the clicked one
+      if (!isOpen) {
+        answer.classList.remove("hidden");
+        chevron.textContent = "▲";
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

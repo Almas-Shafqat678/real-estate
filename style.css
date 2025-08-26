@@ -1,0 +1,23 @@
+/* style.css */
+
+/* Slow spin animation for decorative circles */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+/* Accordion toggle (optional if using JS) */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content.open {
+  max-height: 300px; /* adjust as needed */
+}
