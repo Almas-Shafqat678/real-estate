@@ -3,11 +3,13 @@
    
 This project is a real estate web application built using Next.js and Tailwind CSS.
            Key Features:
-                   *Responsive Navbar with mobile menu.
-                   *Residencies Section with a horizontal slider.
-                   *Our Value Section featuring an FAQ accordion.
+                   Responsive Navbar with mobile menu.
+                   
+                   Residencies Section with a horizontal slider.
+                   
+                   Our Value Section featuring an FAQ accordion.
 
-                   *Contact Section with interactive call-to-action cards.
+                   Contact Section with interactive call-to-action cards.
 
 2. Technologies Used
 
