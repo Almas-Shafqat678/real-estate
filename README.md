@@ -1,137 +1,100 @@
-Project Report: Homyz Real Estate Website
-1. Overview
+#Project Report: Real Estate Web Application
+1. Overview:
+   
+This project is a real estate web application built using Next.js and Tailwind CSS.
+           Key Features:
+*Responsive Navbar with mobile menu.
+*Residencies Section with a horizontal slider.
+*Our Value Section featuring an FAQ accordion.
+*Contact Section with interactive call-to-action cards.
 
-This project is a responsive real estate website built with Next.js/React and styled using Tailwind CSS.
-Key features:
+2. Technologies Used
 
-Modern responsive navigation bar with mobile toggle.
+Next.js – For server-side rendering and React components.
 
-Residencies section with horizontal slider to showcase properties.
+Tailwind CSS – Utility-first styling framework.
 
-Our Value section with image and FAQ accordion.
+Lucide-react icons – Modern icons such as Menu, X, Phone, etc.
 
-Contact section with interactive cards and responsive layout.
+3. Tailwind CSS Usage
 
-Fully mobile-friendly using Tailwind's utility classes.
+Tailwind is used to style components directly in HTML:
 
-2. Tailwind CSS Usage
-
-Tailwind CSS is used as the primary styling framework. It allows utility-first CSS, meaning you style components directly using class names instead of writing separate CSS files.
-
-Examples in the code:
-
-Layout and spacing:
-
-<div class="flex flex-col md:flex-row items-center gap-12"></div>
+<nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
 
 
-flex flex-col md:flex-row → Flexbox layout; column on mobile, row on medium+ screens.
+Responsive behavior is achieved using breakpoints:
 
-gap-12 → Adds uniform spacing between items.
-
-Typography and colors:
-
-<h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-2"></h2>
+<ul className="hidden md:flex items-center gap-8 font-medium">
 
 
-text-3xl md:text-4xl → Responsive font sizes.
+Utility classes like rounded-lg, shadow-lg, overflow-x-scroll make styling easier and more consistent.
 
-text-blue-900 → Custom color from Tailwind palette.
+4. Functions and Logic
+4.1 State Management with Hooks
 
-Responsive Images:
-
-<img class="rounded-t-full overflow-hidden border shadow-lg object-cover w-full h-auto" />
-
-
-object-cover → Maintains aspect ratio.
-
-w-full h-auto → Makes images responsive.
-
-3. Main Components & Functions
-Navbar
-
-useState Hook:
+Example for toggling the mobile menu:
 
 const [open, setOpen] = useState(false);
 
+4.2 Accordion Toggle
 
-Used to toggle the mobile menu on and off.
+Controls opening and closing of FAQ answers:
 
-Lucide-react Icons:
+onClick={() => toggleAccordion(index)}
 
-import { Menu, X } from "lucide-react";
+4.3 Residencies Data Array
 
-
-Used to show hamburger icon and close icon.
-
-Sticky Positioning:
-
-<nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md"></nav>
-
-
-Keeps the navbar fixed at the top when scrolling.
-
-Residencies Section
-
-Uses a horizontal slider created with overflow-x-scroll and flex items.
-
-Data is stored in an array of objects:
+Dynamically renders property cards:
 
 const residencies = [
   { id: 1, price: "$47,043", title: "Aliva Priva Jardin", img: "/images/Modern-Appartment.jpg" },
   ...
 ];
 
+5. Key Sections
+5.1 Navbar
 
-Each item is dynamically rendered inside a card component.
+Desktop links with hover effects.
 
-Our Value Section
+Mobile menu controlled by a hamburger button.
 
-Accordion with useState:
+5.2 Residencies Slider
 
-The toggleAccordion function tracks which FAQ is open.
+Horizontal scroll using Tailwind’s overflow-x-scroll.
 
-Icons rotate using conditional class names:
+Cards rendered dynamically from the residencies array.
 
-className={`${openIndex === index ? "rotate-180" : ""}`}
+5.3 Our Value Section
 
+Left: Feature image.
 
-Flex Layout:
+Right: FAQ accordion with toggle functionality.
 
-Left side: image inside a rounded container.
+5.4 Contact Section
 
-Right side: accordion list.
+Four interactive options: Call, Chat, Video Call, Message.
 
-Contact Section
+Each card contains:
 
-Interactive Cards:
-Each card has an icon (Phone, Chat, Video, Mail) and a call-to-action button.
+Icon
 
-Responsive grid layout using:
+Description
 
-<div class="grid grid-cols-2 gap-4 mt-8"></div>
+Action button
 
+6. How to Upload and Host
+6.1 Push the Project to GitHub
 
-Buttons styled with Tailwind:
+Create a new repository.
 
-<button class="bg-blue-100 text-blue-600 py-1.5 rounded-md"></button>
+Commit and push all files.
 
-4. How It Works
+6.2 Deploy on Vercel or Netlify
 
-Navbar allows smooth navigation across sections with mobile support.
+Link your GitHub repo to the hosting platform.
 
-Residencies shows a scrolling list of properties for easy exploration.
+Ensure images are placed inside /public/images/.
 
-Our Value section educates the user with expandable FAQs.
-
-Contact Section provides multiple ways to reach the team.
-
-Images and static assets can be stored locally or hosted on GitHub and accessed via raw URLs.
-
-5. Future Enhancements
-
-Add form validation and submission in Contact section.
-
-Connect backend for property data (e.g., Firebase, Neon).
-
-Add animations using Framer Motion.
+6.3 Image Reference Example
+<img src="/images/contact-house.png" alt="Contact" />
