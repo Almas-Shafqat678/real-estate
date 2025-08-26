@@ -104,8 +104,3 @@ Create a new repository.
 
 Commit and push all files.
 
-
-Ensure images are placed inside /public/images/.
-
-6.3 Image Reference Example
-<img src="/images/contact-house.png" alt="Contact" />
