@@ -3,10 +3,11 @@
    
 This project is a real estate web application built using Next.js and Tailwind CSS.
            Key Features:
-*Responsive Navbar with mobile menu.
-*Residencies Section with a horizontal slider.
-*Our Value Section featuring an FAQ accordion.
-*Contact Section with interactive call-to-action cards.
+                   *Responsive Navbar with mobile menu.
+                   *Residencies Section with a horizontal slider.
+                   *Our Value Section featuring an FAQ accordion.
+
+                   *Contact Section with interactive call-to-action cards.
 
 2. Technologies Used
 
@@ -91,8 +92,6 @@ Create a new repository.
 Commit and push all files.
 
 6.2 Deploy on Vercel or Netlify
-
-Link your GitHub repo to the hosting platform.
 
 Ensure images are placed inside /public/images/.
 
